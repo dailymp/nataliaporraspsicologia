@@ -8,10 +8,13 @@ interface Props {
 }
 
 const {
-  title = 'Natalia Porras Psicología | Acompañamiento psicológico',
-  description = 'Espacio de psicología clínica con acompañamiento sensible, cercano y profesional para procesos emocionales de alto valor personal.',
+  title = 'Natalia Porras Psicología | Psicóloga en Málaga y online',
+  description = 'Psicóloga en Málaga y online. Acompañamiento psicológico sensible y clínico para ansiedad, autoestima, trauma, apego, EMDR y relaciones.',
   canonical = 'https://nataliaporraspsicologia.com/'
 } = Astro.props;
+
+const siteUrl = 'https://nataliaporraspsicologia.com';
+const socialImage = `${siteUrl}/natalia-porras-psicologia-og.jpg`;
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -20,12 +23,26 @@ const structuredData = {
   description,
   url: canonical,
   sameAs: ['https://www.instagram.com/nataliaporraspsicologia/'],
+  areaServed: [
+    {
+      '@type': 'City',
+      name: 'Málaga'
+    },
+    {
+      '@type': 'Country',
+      name: 'España'
+    }
+  ],
+  availableLanguage: ['es'],
+  serviceType: ['Psicología clínica', 'Terapia individual', 'Terapia de pareja', 'EMDR'],
+  knowsAbout: ['Ansiedad', 'Autoestima', 'Trauma', 'Apego', 'Relaciones', 'Regulación emocional'],
   address: {
     '@type': 'PostalAddress',
+    addressLocality: 'Málaga',
     addressRegion: 'España',
     addressCountry: 'ES'
   },
-  image: 'https://nataliaporraspsicologia.com/logo.svg',
+  image: socialImage,
   priceRange: 'EUR EUR'
 };
 ---
@@ -37,22 +54,28 @@ const structuredData = {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="keywords" content="psicología, bienestar emocional, terapia para mujeres, acompañamiento emocional, natalia porras" />
+    <meta name="keywords" content="psicóloga en Málaga, psicóloga online, terapia psicológica, EMDR, ansiedad, autoestima, trauma, apego, Natalia Porras" />
     <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f3c6cf" />
     <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="es-ES" href={canonical} />
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="/og-image.svg" />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:width" content="1080" />
+    <meta property="og:image:height" content="1080" />
+    <meta property="og:image:alt" content="Natalia Porras Psicología, acompañamiento psicológico en Málaga y online" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:site_name" content="Natalia Porras Psicología" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content="/og-image.svg" />
+    <meta name="twitter:image" content={socialImage} />
+    <meta name="twitter:image:alt" content="Natalia Porras Psicología, acompañamiento psicológico en Málaga y online" />
 
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <link rel="apple-touch-icon" href="/logo.svg" />
