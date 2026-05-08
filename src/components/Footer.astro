@@ -4,9 +4,9 @@ const whatsappUrl = 'https://wa.me/34623926731?text=Hola%20Natalia%2C%20quiero%2
 ---
 
 <footer class="border-t border-brand-100 bg-warm-900 px-4 py-12 text-warm-100 md:px-8">
-  <div class="mx-auto grid max-w-6xl gap-10 md:grid-cols-4">
-    <div class="md:col-span-2">
-      <div class="flex items-center gap-3">
+  <div class="mx-auto grid max-w-6xl gap-10 text-center md:grid-cols-4 md:text-left">
+    <div class="flex flex-col items-center md:col-span-2 md:items-start">
+      <div class="flex items-center justify-center gap-3 md:justify-start">
         <img src="/logo.svg" alt="Logo Natalia Porras" class="h-12 w-12 rounded-full border border-warm-200/20 bg-white" />
         <p class="font-display text-3xl">Natalia Porras Psicología</p>
       </div>
@@ -14,7 +14,7 @@ const whatsappUrl = 'https://wa.me/34623926731?text=Hola%20Natalia%2C%20quiero%2
       <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" class="mt-5 inline-block text-brand-300 transition-colors hover:text-brand-200">WhatsApp</a>
     </div>
 
-    <div>
+    <div class="flex flex-col items-center md:items-start">
       <p class="font-semibold uppercase tracking-[0.14em] text-warm-300">Navegación</p>
       <ul class="mt-4 space-y-2 text-warm-200">
         <li><a href="#inicio" class="hover:text-white">Inicio</a></li>
@@ -24,7 +24,7 @@ const whatsappUrl = 'https://wa.me/34623926731?text=Hola%20Natalia%2C%20quiero%2
       </ul>
     </div>
 
-    <div>
+    <div class="flex flex-col items-center md:items-start">
       <p class="font-semibold uppercase tracking-[0.14em] text-warm-300">Especialidades</p>
       <ul class="mt-4 space-y-2 text-warm-200">
         <li>Gestión de ansiedad</li>
@@ -35,7 +35,7 @@ const whatsappUrl = 'https://wa.me/34623926731?text=Hola%20Natalia%2C%20quiero%2
     </div>
   </div>
 
-  <div class="mx-auto mt-10 flex max-w-6xl flex-col justify-between gap-3 border-t border-warm-700 pt-6 text-sm text-warm-300 md:flex-row">
+  <div class="mx-auto mt-10 flex max-w-6xl flex-col items-center justify-between gap-3 border-t border-warm-700 pt-6 text-center text-sm text-warm-300 md:flex-row md:text-left">
     <p>© {year} Natalia Porras Psicología. Todos los derechos reservados.</p>
     <p>
       España · Online · Desarrollado por
