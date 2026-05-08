@@ -16,6 +16,10 @@ body {
     linear-gradient(180deg, #fffdf8 0%, #faf8f6 100%);
 }
 
+:where(h1, h2, h3, h4, h5, h6, p, a, li, summary, span, label, small, blockquote) {
+  text-align: center;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(20px);
@@ -58,4 +62,9 @@ body {
 
 .section-subtitle {
   @apply mt-3 max-w-2xl text-base leading-relaxed text-warm-700;
+  text-align: center !important;
+}
+
+.whatsapp-fab {
+  @apply fixed bottom-5 right-5 z-[60] inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white shadow-card transition-all duration-300 hover:scale-[1.03] hover:shadow-glow;
 }

@@ -1,3 +1,7 @@
+---
+const whatsappUrl = 'https://wa.me/34623926731?text=Hola%20Natalia%2C%20quiero%20agendar%20una%20sesi%C3%B3n%20y%20recibir%20m%C3%A1s%20informaci%C3%B3n.';
+---
+
 <header id="main-nav" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
   <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-8">
     <a href="#inicio" aria-label="Ir al inicio" class="group inline-flex items-center gap-3">
@@ -10,7 +14,7 @@
       <a class="nav-link" href="#servicios" aria-label="Ir a servicios">Servicios</a>
       <a class="nav-link" href="#testimonios" aria-label="Ir a testimonios">Testimonios</a>
       <a class="nav-link" href="#faq" aria-label="Ir a preguntas frecuentes">FAQ</a>
-      <a class="btn-primary" href="https://www.instagram.com/nataliaporraspsicologia/" aria-label="Abrir Instagram" target="_blank" rel="noopener noreferrer">Agendar por Instagram</a>
+      <a class="btn-primary" href={whatsappUrl} aria-label="Contactar por WhatsApp" target="_blank" rel="noopener noreferrer">Agendar por WhatsApp</a>
     </nav>
 
     <button id="menu-btn" aria-label="Abrir menu" class="inline-flex rounded-full border border-brand-200 bg-white/80 p-2 text-brand-700 md:hidden">
@@ -26,7 +30,7 @@
       <a class="nav-link" href="#servicios" aria-label="Ir a servicios">Servicios</a>
       <a class="nav-link" href="#testimonios" aria-label="Ir a testimonios">Testimonios</a>
       <a class="nav-link" href="#faq" aria-label="Ir a preguntas frecuentes">FAQ</a>
-      <a class="btn-primary text-center" href="https://www.instagram.com/nataliaporraspsicologia/" aria-label="Abrir Instagram" target="_blank" rel="noopener noreferrer">Agendar por Instagram</a>
+      <a class="btn-primary text-center" href={whatsappUrl} aria-label="Contactar por WhatsApp" target="_blank" rel="noopener noreferrer">Agendar por WhatsApp</a>
     </nav>
   </div>
 </header>
