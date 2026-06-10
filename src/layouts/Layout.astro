@@ -9,7 +9,7 @@ interface Props {
 
 const {
   title = 'Natalia Porras Psicología | Psicóloga en Málaga y online',
-  description = 'Psicóloga en Málaga y online. Acompañamiento psicológico sensible y clínico para ansiedad, autoestima, trauma, apego, EMDR y relaciones.',
+  description = 'Psicóloga General Sanitaria en Málaga y online. Terapia individual y de pareja para ansiedad, autoestima, trauma, apego, EMDR, embarazo, postparto y crianza.',
   canonical = 'https://nataliaporraspsicologia.com/'
 } = Astro.props;
 
@@ -35,8 +35,8 @@ const structuredData = {
     }
   ],
   availableLanguage: ['es'],
-  serviceType: ['Psicología clínica', 'Terapia individual', 'Terapia de pareja', 'EMDR'],
-  knowsAbout: ['Ansiedad', 'Autoestima', 'Trauma', 'Apego', 'Relaciones', 'Regulación emocional'],
+  serviceType: ['Psicología clínica', 'Terapia individual', 'Terapia de pareja', 'EMDR', 'Terapia online'],
+  knowsAbout: ['Ansiedad', 'Autoestima', 'Trauma', 'Apego', 'Relaciones', 'Regulación emocional', 'Embarazo', 'Postparto', 'Crianza'],
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Málaga',
@@ -55,7 +55,7 @@ const structuredData = {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="keywords" content="psicóloga en Málaga, psicóloga online, terapia psicológica, EMDR, ansiedad, autoestima, trauma, apego, Natalia Porras" />
+    <meta name="keywords" content="psicóloga en Málaga, psicóloga online, terapia psicológica, EMDR, ansiedad, autoestima, trauma, apego, terapia de pareja, embarazo, postparto, crianza, Natalia Porras" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#f3c6cf" />
     <link rel="canonical" href={canonical} />
