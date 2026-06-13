@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#3b2d2b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Natalia Porras Psicología logo">
+  <path d="M50 52 C42 44, 22 30, 18 18 C26 22, 38 34, 50 52Z" />
+  <path d="M50 52 C58 44, 78 30, 82 18 C74 22, 62 34, 50 52Z" />
+  <path d="M50 54 C40 60, 20 68, 16 80 C26 72, 40 64, 50 54Z" />
+  <path d="M50 54 C60 60, 80 68, 84 80 C74 72, 60 64, 50 54Z" />
+  <path d="M50 42 Q51 53 50 68" stroke-width="2" />
+  <path d="M50 42 C47 36, 34 28, 30 22" stroke-width="1.2" />
+  <path d="M50 42 C53 36, 66 28, 70 22" stroke-width="1.2" />
+  <circle cx="30" cy="22" r="1.5" fill="#3b2d2b" stroke="none" />
+  <circle cx="70" cy="22" r="1.5" fill="#3b2d2b" stroke="none" />
+</svg>
