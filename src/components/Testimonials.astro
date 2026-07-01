@@ -1,28 +1,56 @@
+---
+const testimonials = [
+  {
+    date: '8 de mayo de 2026',
+    text: 'Vamos mi pareja y yo, y Natalia es una gran profesional, nos está ayudando mucho.'
+  },
+  {
+    date: '17/04/2026',
+    text: 'Todo bien. Muy atenta. Pareció muy interesada. Y me dio sensación de alguien cercano y muy humano.'
+  },
+  {
+    date: '15/04/2026',
+    text: 'Me siento muy cómodo y siento que entiende muy bien lo que necesito. Es una gran profesional.'
+  },
+  {
+    date: '25/02/2026',
+    text: 'Primera toma de contacto muy bien y agradable. Seguiremos trabajando.'
+  },
+  {
+    date: '15/01/2026',
+    text: 'Gran profesional y excelente persona. Eficaz y empática.'
+  },
+  {
+    date: '26/11/2025',
+    text: 'Fue la primera visita, pero nos transmitió profesionalidad y buena comunicación.'
+  },
+  {
+    date: '17/09/2025',
+    text: 'Muy buena profesional, escucha, atención y comprensión.'
+  }
+];
+---
+
 <section id="testimonios" class="px-4 py-16 md:px-8 md:py-24">
   <div class="mx-auto max-w-6xl">
     <div class="reveal">
-      <h2 class="section-title">Testimonios</h2>
-      <p class="section-subtitle mx-auto">Historias de personas que decidieron priorizar su bienestar emocional.</p>
+      <h2 class="section-title">Opiniones de pacientes</h2>
+      <p class="section-subtitle mx-auto">Reseñas reales de personas que han iniciado su proceso terapéutico con Natalia.</p>
     </div>
 
-    <div class="mt-10 grid gap-6 md:grid-cols-3">
-      <article class="reveal rounded-3xl border border-brand-100 bg-brand-50 p-6 shadow-soft">
-        <p class="text-accent-600">★★★★★</p>
-        <p class="mt-3 text-warm-700">"Por primera vez sentí que tenía un lugar seguro para ordenar lo que me pasaba sin sentirme juzgada."</p>
-        <p class="mt-4 font-semibold text-warm-900">Laura M.</p>
-      </article>
-
-      <article class="reveal rounded-3xl border border-brand-100 bg-brand-50 p-6 shadow-soft">
-        <p class="text-accent-600">★★★★★</p>
-        <p class="mt-3 text-warm-700">"La forma de trabajar de Natalia es clara y humana. Salgo de cada sesión con más foco y calma."</p>
-        <p class="mt-4 font-semibold text-warm-900">Paula R.</p>
-      </article>
-
-      <article class="reveal rounded-3xl border border-brand-100 bg-brand-50 p-6 shadow-soft">
-        <p class="text-accent-600">★★★★★</p>
-        <p class="mt-3 text-warm-700">"Sentí un cambio real en cómo me relaciono conmigo y con mis decisiones."</p>
-        <p class="mt-4 font-semibold text-warm-900">Irene C.</p>
-      </article>
+    <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      {testimonials.map((testimonial) => (
+        <article class="reveal flex min-h-[220px] flex-col rounded-2xl border border-brand-100 bg-white/85 p-6 shadow-soft">
+          <div class="flex items-center justify-center gap-2">
+            <p class="text-lg tracking-[0.18em] text-[#00836f]" aria-label="5 estrellas">★★★★★</p>
+          </div>
+          <p class="mt-4 flex-1 text-base leading-relaxed text-warm-700">"{testimonial.text}"</p>
+          <div class="mt-5 border-t border-brand-100 pt-4">
+            <p class="text-sm font-semibold text-brand-700">Reseña verificada</p>
+            <p class="mt-1 text-sm text-warm-500">{testimonial.date}</p>
+          </div>
+        </article>
+      ))}
     </div>
   </div>
 </section>
